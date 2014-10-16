@@ -24,6 +24,7 @@ bool EnterLayer::init()
     {
         return false;
     }
+    //获取屏幕的大小
    
     WINSIZE = CCDirector::sharedDirector()->getWinSize();
      addImage();
