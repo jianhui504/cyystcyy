@@ -7,7 +7,8 @@
 //
 
 #include "EnterLayer.h"
-
+#include "Gameover.h"
+#include "GameSuccess.h"
 #include "SimpleAudioEngine.h"
 using namespace CocosDenshion;
 CCScene *EnterLayer::scene()
@@ -58,5 +59,6 @@ void EnterLayer::runActionBg()
 //进入下一个场景
 void EnterLayer::EnterScene()
 {
-    
+    CCDirector::sharedDirector()->replaceScene(Gameover::scene());
+    //CCDirector::sharedDirector()->replaceScene(GameSuccess::scene());
 }
